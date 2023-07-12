@@ -1,0 +1,152 @@
+@font-face {
+    font-family: 'vazir';
+    src: url('../fonts/vazir.eot');
+    src: url('../fonts/vazir.ttf') format('truetype'),
+        url('../fonts/vazir.woff2') format('woff2'),
+        url('../fonts/vazir.woff') format('woff');
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+body {
+    font-family: 'vazir';
+    direction: rtl;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.fullpageMenu {
+    position: fixed;
+    top: -100%;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #111;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row-reverse;
+    transition: top .4s ease-in;
+    -webkit-transition: top .4s ease-in;
+    -moz-transition: top .4s ease-in;
+    -ms-transition: top .4s ease-in;
+    -o-transition: top .4s ease-in;
+}
+.fullpageMenu.active{
+    top: 0;
+}
+.fullpageMenu .banner {
+    min-width: 600px;
+    position: relative;
+    height: 100%;
+}
+
+.fullpageMenu .banner img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.fullpageMenu .nav {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fullpageMenu .nav ul {
+    position: relative;
+}
+
+.fullpageMenu .nav ul li {
+    position: relative;
+    padding: 0 20px;
+    list-style: none;
+    overflow: hidden;
+    margin: 5px 0;
+}
+.fullpageMenu .nav ul li::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ef0cff;
+    transform:scaleY(0);
+    -webkit-transform:scaleY(0);
+    -moz-transform:scaleY(0);
+    -ms-transform:scaleY(0);
+    -o-transform:scaleY(0);
+    transition: transform 0.3s ease-in-out;
+    -webkit-transition: transform 0.3s ease-in-out;
+    -moz-transition: transform 0.3s ease-in-out;
+    -ms-transition: transform 0.3s ease-in-out;
+    -o-transition: transform 0.3s ease-in-out;
+    transform-origin: bottom;
+}
+.fullpageMenu .nav ul li:hover:before {
+    transform: scaleY(1);
+    -webkit-transform: scaleY(1);
+    -moz-transform: scaleY(1);
+    -ms-transform: scaleY(1);
+    -o-transform: scaleY(1);
+    transform-origin: top;
+}
+.fullpageMenu .nav ul li a {
+    position: relative;
+    color: #fff;
+    text-decoration: none;
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 5rem;
+    padding-top: 12px;
+    display: block;
+    transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+}
+.fullpageMenu .nav ul li a::before{
+    content: attr(data-text);
+    position: absolute;
+    bottom: -100%;
+    right: 0;
+    color: #fff;
+}
+.fullpageMenu .nav ul li:hover a{
+    transform: translateY(-100%);
+    -webkit-transform: translateY(-100%);
+    -moz-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    -o-transform: translateY(-100%);
+}
+.meniicon {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    background: #fff url('../img/1.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 40px;
+    cursor: pointer;
+}
+.meniicon.active{
+    background: #fff url('../img/close.png');
+    background-size: cover;
+    background-position: center;
+}
