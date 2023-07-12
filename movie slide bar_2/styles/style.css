@@ -1,0 +1,71 @@
+@font-face {
+    font-family: 'vazie';
+    src: url('../fonts/vazir.eot'); 
+    src: url('../fonts/vazir.ttf')  format('truetype'), 
+         url('../fonts/vazir.woff2') format('woff2'), 
+         url('../fonts/vazir.woff') format('woff');
+  }
+
+  *{
+      padding: 0;
+      margin: 0;
+  }
+
+
+  body{
+      font-family: 'vazir';
+      direction: rtl;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+  }
+  section{
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+  section video{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  section .navigation{
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    display: flex;
+    width: 40vw;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+}
+section .navigation li{
+    width: 210px;
+    height: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background-color: #fff;
+}
+section .navigation li img{
+    width: 200px;
+    height: 120px;
+    opacity: 0.8;
+    transition:all 0.4;
+    -webkit-transition:all 0.4;
+    -moz-transition:all 0.4;
+    -ms-transition:all 0.4;
+    -o-transition:all 0.4;
+}
+section .navigation li img:hover{
+    opacity: 1;
+}
