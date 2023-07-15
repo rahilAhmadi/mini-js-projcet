@@ -21,3 +21,23 @@
       align-items: center;
       height: 100vh;
   }
+  button{
+    padding: 4px 10px;
+    font-size: 18px;
+    color: #fff;
+    background-color: black;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    font-family: 'vazir';
+    margin-top: 50px;
+}
+ul{
+    background-color: rgb(177, 252, 255);
+    width: 60%;
+}
+li{
+    list-style: none;
+}
