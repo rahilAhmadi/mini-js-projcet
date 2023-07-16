@@ -15,9 +15,111 @@
   body{
       font-family: 'vazir';
       direction: rtl;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
       height: 100vh;
+      overflow-x: hidden;
   }
+ header{
+    background-color: #1c0b64;
+    height: 200px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+
+ }
+ header h2{
+    font-size: 35px;
+    color: #fff;
+ }
+ header p{
+    color: #e9e9e9;
+    width: 900px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 25px;
+ }
+
+ .content {
+    width: 900px;
+    margin: 50px auto;
+    font-size: 17px;
+
+ }
+ .sidebar{
+    height: 100vh;
+    position: absolute;
+    left: -200px;
+    top: 0;
+    width: 200px;
+    background-color: #311b92;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0;
+    transition: left 0.4s ease-in-out;
+    -webkit-transition: left 0.4s ease-in-out;
+    -moz-transition: left 0.4s ease-in-out;
+    -ms-transition: left 0.4s ease-in-out;
+    -o-transition: left 0.4s ease-in-out;
+    visibility: hidden;
+}
+ .sidebar img{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    object-fit: cover;
+    
+}
+.sidebar ul{
+    list-style: none;
+    margin: 50px auto;
+    width: 100%;
+}
+ .sidebar ul li{
+    text-align: center;
+    border-bottom: 1px solid #616161;
+    border-top: 1px solid #616161;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+}
+ .sidebar ul li:hover{
+    background: #3b21ac;
+ }
+ .sidebar ul li a{
+    color: #fff;
+    text-decoration: none;
+    padding: 20px;
+    display: block;
+ }
+ .sidebar .btn{
+    position: absolute;
+    top: 20px;
+    right: -40px;
+    background-color: #311b92;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    visibility: visible;
+ }
+ .sidebar .btn svg{
+    color: #fff;
+    font-size: 20px;
+    /* برای چرخیدن یک ایکن میتوان از انیمیشن استفاده کرد و از این خط کد استفاده کرد. */
+    animation: fa-spin 5s infinite linear;
+    -webkit-animation: fa-spin 5s infinite linear;
+}
+
+ .sidebar.active{
+    left: 0;
+ }
