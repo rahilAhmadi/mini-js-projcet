@@ -1,3 +1,3 @@
 function changeColor(id){
-    document.body.style.background=document.getElementById(id).innerHTML;
+    document.body.style.background=getComputedStyle(document.getElementById(id)).backgroundColor;
 }
