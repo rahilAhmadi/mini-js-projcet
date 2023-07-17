@@ -21,3 +21,37 @@
       align-items: center;
       height: 100vh;
   }
+
+  .box{
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    padding: 10px;
+    background: #fff;
+    display: flex;
+}
+.box a{
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+    cursor: pointer;
+    text-indent: -999px;
+}
+#red{
+    background-color: #b71c1c;
+}
+#blue{
+    background-color: #0d47a1;
+}
+#green{
+    background-color: #1b5e20;
+}
+#gray{
+    background-color: #263238;
+}
+#yellow{
+    background-color: #f57f17;
+}
+#orange{
+    background-color: #bf360c;
+}
