@@ -21,3 +21,59 @@
       align-items: center;
       height: 100vh;
   }
+  h1{
+    margin-bottom: 50px;
+    padding-bottom: 50px;
+    border-bottom: 5px solid #cc0000;
+  }
+
+  .passwrod{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 50px;
+    position: relative;
+  }
+
+  .passwrod input{
+    width: 70%;
+    padding: 10px;
+    box-sizing: border-box;
+    font-family: 'vazir';
+    border: 1px solid #ccc;
+    color: #555;
+    font-size: 18px;
+    font-weight: bold;
+    outline: none;
+  }
+  .toggle{
+    position: absolute;
+    right: 40px;
+
+  }
+  .fa-eye-slash{
+    display: none;
+  }
+
+  .toggle svg{
+    color: #505050;
+    opacity: .7;
+    cursor: pointer;
+    transition: all 0.4s;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -ms-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    font-size: 19px;
+}
+  .toggle svg:hover{
+    opacity: 1;
+  }
+
+  .hide .fa-eye{
+    display: none;
+  }
+  .hide .fa-eye-slash{
+    display: block;
+  }
