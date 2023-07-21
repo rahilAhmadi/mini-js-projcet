@@ -21,3 +21,17 @@
       align-items: center;
       height: 100vh;
   }
+
+  .container{
+    text-align: center;
+  }
+  .container .button{
+    width: 200px;
+    background-color: #ec5c08;
+    font-size: 25px;
+    padding: 10px;
+    border: none;
+    font-family: 'vazir';
+    color: #fff;
+    cursor: pointer;
+  }
