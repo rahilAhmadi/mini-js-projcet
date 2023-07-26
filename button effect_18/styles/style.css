@@ -16,8 +16,58 @@
       font-family: 'vazir';
       direction: rtl;
       display: flex;
-      flex-direction: column;
       justify-content: center;
       align-items: center;
       height: 100vh;
+      background-color: #004730;
   }
+  a{
+    color: #fff;
+    background-color: #c00;
+    margin: 0 50px;
+    text-decoration: none;
+    width: 200px;
+    height: 50px;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+}
+a:nth-child(2){
+    background-color: #106c97;
+}
+span{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    background-color: #fff;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    animation: animate 1s linear infinite;
+    -webkit-animation: animate 1s linear infinite;
+    pointer-events: none;
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+}
+@keyframes animate{
+    0%{
+        width: 0;
+        height: 0;
+        opacity: .5;
+    }
+    100%{
+        width: 500px;
+        height: 500px;
+        opacity: 0;
+    }
+}
