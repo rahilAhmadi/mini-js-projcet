@@ -21,3 +21,8 @@
       align-items: center;
       height: 100vh;
   }
+  select{
+    padding: 10px;
+    font-size: 18px;
+    font-family: 'vazir';
+  }
