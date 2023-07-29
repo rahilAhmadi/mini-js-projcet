@@ -1,0 +1,155 @@
+@font-face {
+    font-family: 'vazir';
+    src: url('../fonts/vazir.eot'); 
+    src: url('../fonts/vazir.ttf')  format('truetype'), 
+         url('../fonts/vazir.woff2') format('woff2'), 
+         url('../fonts/vazir.woff') format('woff');
+  }
+
+  *{
+      padding: 0;
+      margin: 0;
+      outline: none;
+  }
+
+
+  body{
+      font-family: 'vazir';
+      direction: rtl;
+     background: #333;
+     overflow-x: hidden;
+  }
+  .container{
+    width: 100vw;
+   min-height: 100vh;
+    background: #fafafa;
+    padding: 50px;
+    box-sizing: border-box;
+    transition:all .5s linear ;
+    -webkit-transition:all .5s linear ;
+    -moz-transition:all .5s linear ;
+    -ms-transition:all .5s linear ;
+    -o-transition:all .5s linear ;
+    transform-origin: top right;
+}
+  .container.show-nav{
+    transform: rotate(20deg);
+    -webkit-transform: rotate(20deg);
+    -moz-transform: rotate(20deg);
+    -ms-transform: rotate(20deg);
+    -o-transform: rotate(20deg);
+}
+  .circle_container{
+    position: fixed;
+    right: -80px;
+    top: -100px;
+  }
+  .container.show-nav .circle{
+    transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+}
+  .circle{
+    width: 200px;
+    height: 200px;
+    background-color: #faa000;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    position: relative;
+    transition: transform 0.5s linear;
+    -webkit-transition: transform 0.5s linear;
+    -moz-transition: transform 0.5s linear;
+    -ms-transition: transform 0.5s linear;
+    -o-transition: transform 0.5s linear;
+}
+.circle button{
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    font-size: 25px;
+    height: 100px;
+}
+.circle #open{
+    right: 60%;
+}
+.circle #close{
+    top: 40%;
+    transform: rotate(75deg);
+    -webkit-transform: rotate(75deg);
+    -moz-transform: rotate(75deg);
+    -ms-transform: rotate(75deg);
+    -o-transform: rotate(75deg);
+    transform-origin: top right;
+}
+  .content{
+    width: 1000px;
+    margin: 50px auto;
+  }
+  .content img{
+    width: 100%;
+  }
+  .content small{
+    color: #666;
+  }
+  .content p{
+    line-height: 25px;
+  }
+  .content h3{
+    padding:20px 0 ;
+  }
+.container.show-nav + nav li{
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transition-delay: .3s;
+}
+  nav{
+    position: fixed;
+    bottom: 50px;
+    right: 30px;
+  }
+  nav ul{
+    list-style: none;
+  }
+  nav ul li{
+    color: #fff;
+    margin: 20px;
+    cursor: pointer;
+    transform: translateX(150%);
+    -webkit-transform: translateX(150%);
+    -moz-transform: translateX(150%);
+    -ms-transform: translateX(150%);
+    -o-transform: translateX(150%);
+    transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out;
+    -ms-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+  }
+  nav ul li+ li{
+    margin-right: 35px;
+    transform: translateX(250%);
+    -webkit-transform: translateX(250%);
+    -moz-transform: translateX(250%);
+    -ms-transform: translateX(250%);
+    -o-transform: translateX(250%);
+}
+  nav ul li+ li+li{
+    margin-right: 60px;
+    transform: translateX(350%);
+    -webkit-transform: translateX(350%);
+    -moz-transform: translateX(350%);
+    -ms-transform: translateX(350%);
+    -o-transform: translateX(350%);
+}
