@@ -1,0 +1,97 @@
+@font-face {
+    font-family: 'vazir';
+    src: url('../fonts/vazir.eot'); 
+    src: url('../fonts/vazir.ttf')  format('truetype'), 
+         url('../fonts/vazir.woff2') format('woff2'), 
+         url('../fonts/vazir.woff') format('woff');
+  }
+
+  *{
+      padding: 0;
+      margin: 0;
+  }
+
+
+  body{
+      font-family: 'vazir';
+      direction: rtl;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: #1a1a1a;
+  }
+  nav{
+    width: 100%;
+    height: 900px;
+    display: flex;
+    justify-content: center;
+    background:linear-gradient(rgba(255,255,255,.3),rgba(0,0,0,.9)), url('../images/banner.jpg');
+    object-fit: cover;
+    background-size: cover;
+    background-position: center;
+  }
+  nav header{
+    width: 80%;
+    height: 100px;
+    background: #6fc704;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    top: 50px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    box-shadow: 0 5px 15px rgba(141,141,141, .9);
+    transition: width .7s ease-in-out;
+    -webkit-transition: width .7s ease-in-out;
+    -moz-transition: width .7s ease-in-out;
+    -ms-transition: width .7s ease-in-out;
+    -o-transition: width .7s ease-in-out;
+}
+.sticky{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+}
+nav header .menu{
+    width: 30%;
+    height: 100%;
+    padding: 0 30px;
+}
+nav header .menu ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    height: 100%;
+}
+nav header .menu ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 19;
+}
+nav header .logo{
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    clip-path: polygon(0 0,80% 0%,100% 100%,0% 100%);
+}
+  nav header .logo img{
+    width: 80px;
+  }
+  section {
+    margin-top: 100px;
+    color: #ccc;
+    padding: 0 200px;
+  }
