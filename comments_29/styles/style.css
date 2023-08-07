@@ -54,7 +54,27 @@
   }
   .slider .slide.active{
     display: block;
-  }
+    animation: slide 1s ease-in-out;
+    -webkit-animation: slide 1s ease-in-out;
+}
+@keyframes slide{
+    0%{
+        opacity: 0;
+        transform: translateX(-15px);
+        -webkit-transform: translateX(-15px);
+        -moz-transform: translateX(-15px);
+        -ms-transform: translateX(-15px);
+        -o-transform: translateX(-15px);
+}
+100%{
+    opacity: 1;
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+}
+}
   .slider .slide p{
     font-size: 18px;
     word-spacing: 2px;
