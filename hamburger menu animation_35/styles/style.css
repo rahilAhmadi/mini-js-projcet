@@ -1,0 +1,100 @@
+@font-face {
+    font-family: 'vazir';
+    src: url('../fonts/vazir.eot'); 
+    src: url('../fonts/vazir.ttf')  format('truetype'), 
+         url('../fonts/vazir.woff2') format('woff2'), 
+         url('../fonts/vazir.woff') format('woff');
+  }
+
+  *{
+      padding: 0;
+      margin: 0;
+  }
+
+
+  body{
+      font-family: 'vazir';
+      direction: rtl;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+  }
+  nav{
+    position: absolute;
+    top: 50px;
+    right: 100px;
+  }
+  nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    list-style-type: none;
+    box-shadow: -7px 9px 17px 0px #00000017;
+    width: 0;
+    transform: translateX(50px);
+    overflow: hidden;
+    opacity: 0;
+    -webkit-transform: translateX(50px);
+    -moz-transform: translateX(50px);
+    -ms-transform: translateX(50px);
+    -o-transform: translateX(50px);
+    transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out;
+    -ms-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    padding: 20px;
+}
+nav.show ul{
+    width: 450px;
+    opacity: 1;
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+}
+nav ul li a{
+    color: #000;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+.close{
+    position: absolute;
+    top: 6%;
+    right: -80px;
+    width: 60px;
+    height: 60px;
+    background-image: url('../img/hamburger.svg');
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    background-size: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: 0px 0px 17px 0px #00000017;
+    background-color: #fff;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+}
+.close.openClose{
+    transform: rotate(360deg);
+    background-image: url('../img/close.svg');
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+}
