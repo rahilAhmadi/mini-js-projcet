@@ -47,13 +47,21 @@ header ul li{
     padding: 0 30px;
     display: flex;
     align-items: center;
-
-  }
+    transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+}
   header ul li.active a{
     background-color: #c00;
     color: #fff;
+    
   }
-
+main .product{
+    width: 100%;
+    height: 150vh;
+}
   main .product ul{
     width: 80%;
     margin: auto;
@@ -67,7 +75,12 @@ header ul li{
       background-color: #f3f3f3;
       list-style: none;
       margin-top: 50px;
-    }
+      transition: all .5s ease-in-out;
+      -webkit-transition: all .5s ease-in-out;
+      -moz-transition: all .5s ease-in-out;
+      -ms-transition: all .5s ease-in-out;
+      -o-transition: all .5s ease-in-out;
+}
 main .product ul li img{
     width: 100%;
     height: 300px;
