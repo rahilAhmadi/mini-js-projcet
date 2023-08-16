@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Document</title>
+    
+</head>
+<body>
+    <div class="container">
+        <h1>ساخت یک گالری ویدیو</h1>
+        <div class="row">
+            <div class="col">
+                <div class="feature-img">
+                    <img src="./img/1.png" class="img" alt="">
+                    <img src="./img/play.png" class="btn-play" onclick="playVideo('vieos/1.mp4')" alt="">
+                </div>
+            </div>
+            <div class="col">
+                <div class="small-img-row">
+                    <div class="small-img">
+                    <img src="./img/1.png" class="cover" alt="">
+                    <img src="./img/play.png" class="btn-play" onclick="playVideo('vieos/1.mp4')" alt="">
+                </div>
+                    <p>لورم اپیسوم متن ساختگی با تولید متن نام فهوم و ساده از صنعتچاپ و با استفاده از طراحان گرافیک است. چاپگر ها و متون بلکه روزنامه و مجله در ستون و سطر آنجنان که لازم است.</p>
+                </div>
+                <div class="small-img-row">
+                    <div class="small-img">
+                    <img src="./img/2.png" class="cover" alt="">
+                    <img src="./img/play.png" class="btn-play" onclick="playVideo('vieos/2.mov')" alt="">
+                </div>
+                    <p>لورم اپیسوم متن ساختگی با تولید متن نام فهوم و ساده از صنعتچاپ و با استفاده از طراحان گرافیک است. چاپگر ها و متون بلکه روزنامه و مجله در ستون و سطر آنجنان که لازم است.</p>
+                </div>
+                <div class="small-img-row">
+                    <div class="small-img">
+                    <img src="./img/3.png" class="cover" alt="">
+                    <img src="./img/play.png" class="btn-play" onclick="playVideo('vieos/3.webm')" alt="">
+                </div>
+                    <p>لورم اپیسوم متن ساختگی با تولید متن نام فهوم و ساده از صنعتچاپ و با استفاده از طراحان گرافیک است. چاپگر ها و متون بلکه روزنامه و مجله در ستون و سطر آنجنان که لازم است.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="video-player" id="videoPlayer">
+        <video controls autoplay width="100%" id="myVideo">
+            <source src="./vieos/1.mp4" type="video/mp4">
+        </video>
+        <img src="./img/close.png" class="close-btn" onclick="stopPlayer()" alt="">
+    </div>
+    
+    <script src="js/script.js"></script>
+</body>
+</html>
