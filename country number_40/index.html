@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Document</title>
+    
+</head>
+<body>
+    
+    <form action="">
+        <div>
+            <label>کشور</label>
+            <select name="country" id="country">
+                <option value="+1">آمریکا (+1)</option>
+                <option value="+98">ایران (+98)</option>
+                <optgroup label="دیگر کشور ها">
+                    <option value="+49">آلمان (+49)</option>
+                    <option value="+93">افغانستان (+93)</option>
+                    <option value="+39">ایتالیا (+39)</option>
+                    <option value="+34">اسپانیا (+34)</option>
+                    <option value="+32">بلژیک (+32)</option>
+                    <option value="+55">برزیل (+55)</option>
+                    <option value="+385">کرواسی (+385)</option>
+                    <option value="+46">سوئد (+46)</option>
+                </optgroup>
+            </select>
+        </div>
+        <div>
+            <label>شماره همراه</label>
+            <span id="select_country">+1 :</span>
+            <input type="tell" maxlength="10" placeholder="شماره موبایل">
+        </div>
+
+        <input type="submit" value="ارسال کد">
+    </form>
+
+    
+    <script src="js/script.js"></script>
+</body>
+</html>
