@@ -1,0 +1,105 @@
+@font-face {
+    font-family: 'vazir';
+    src: url('../fonts/vazir.eot'); 
+    src: url('../fonts/vazir.ttf')  format('truetype'), 
+         url('../fonts/vazir.woff2') format('woff2'), 
+         url('../fonts/vazir.woff') format('woff');
+  }
+
+  *{
+      padding: 0;
+      margin: 0;
+  }
+
+
+  body{
+      font-family: 'vazir';
+      direction: rtl;
+     
+  }
+  h1{
+    position: relative;
+    top: 60px;
+    margin-right: 100px;
+    cursor: pointer;
+  }
+
+  h1::before{
+    content: attr(data-count);
+    position: absolute;
+    top: -12px;
+    right: 17px;
+    width: 20px;
+    height: 20px;
+    background-color: #c00;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    font-size: 15px;
+     color: #fff;
+}
+section{
+    width: 90%;
+    height: 400px;
+    display: flex;
+    justify-content: space-between;
+    margin: 100px auto;
+    flex-wrap: wrap;
+}
+section div{
+    width: 24%;
+    position: relative;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: #f5f5f5;
+    margin-top: 30px;
+    box-shadow: 0 3px 10px rgba(97, 97, 97, 0.3);
+}
+section div img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+section div h6{
+    padding: 30px;
+    font-size: 18px;
+}
+section span{
+    color: green;
+    margin-left: 5px;
+
+}
+section div button{
+    width: 100%;
+    border: none;
+    font-family: 'vazir';
+    background-color: #c00;
+    color: #fff;
+    padding: 10px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.select{
+    background-color: #555;
+    position: absolute;
+    top: 100px;
+    right: 50%;
+    width: 60vw;
+    height: 80vh;
+    transform: translateX(50%);
+    -webkit-transform: translateX(50%);
+    -moz-transform: translateX(50%);
+    -ms-transform: translateX(50%);
+    -o-transform: translateX(50%);
+    display: none;
+}
+.select div{
+    width: 100%;
+    height: 200px;
+    display: flex;
+}
+.select div img{
+    width: 300px;
+}
