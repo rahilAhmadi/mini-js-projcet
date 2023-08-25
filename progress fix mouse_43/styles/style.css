@@ -21,8 +21,8 @@
   }
   .progress-section{
     position: fixed;
-    right: 100px;
-    top: 40%;
+    left: 20px;
+    top: -10px;
     width: 50px;
     height: 20%;
     display: flex;
