@@ -15,9 +15,52 @@
   body{
       font-family: 'vazir';
       direction: rtl;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
+     
+      height: 400px;
+      background-color: #222;
+  }
+  .progress-section{
+    position: fixed;
+    right: 100px;
+    top: 40%;
+    width: 50px;
+    height: 20%;
+    display: flex;
+    justify-content: space-between;
+    transition:all .3s ease-out ;
+    -webkit-transition:all .3s ease-out ;
+    -moz-transition:all .3s ease-out ;
+    -ms-transition:all .3s ease-out ;
+    -o-transition:all .3s ease-out ;
+}
+.progress-bar-wrap{
+    position: relative;
+    width: 5px;
+    border: 1px solid black;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    overflow: hidden;
+    background-color: rgb(70, 70, 70);
+}
+.progress-bar{
+    position: absolute;
+    width: 100%;
+    height: 0%;
+    background-color: rgb(189, 189, 189);
+    bottom: 0;
+}
+.progress-num{
+    color: #fff;
+}
+  section{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 3rem;
   }
