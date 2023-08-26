@@ -21,3 +21,31 @@
       align-items: center;
       height: 100vh;
   }
+  section{
+    width: 90%;
+    text-align: center;
+  }
+  section table{
+    margin: auto;
+    color: #757575;
+    background-color: #fff;
+    width: 100%;
+    border-collapse: collapse;
+  }
+  section table tr{
+    border: 1px solid #757575;
+  }
+  section table tr td{
+    padding: 10px 5px;
+  }
+  section table tr td{
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+  }
+  .fa-trash{
+    color: red;
+  }
+  .fa-edit{
+    color: green;
+  }
