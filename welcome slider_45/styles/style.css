@@ -1,0 +1,111 @@
+@font-face {
+    font-family: 'vazir';
+    src: url('../fonts/vazir.eot'); 
+    src: url('../fonts/vazir.ttf')  format('truetype'), 
+         url('../fonts/vazir.woff2') format('woff2'), 
+         url('../fonts/vazir.woff') format('woff');
+  }
+
+  *{
+      padding: 0;
+      margin: 0;
+  }
+
+
+  body{
+      font-family: 'vazir';
+      direction: rtl;
+  }
+  .contaier{
+    width: 1400px;
+    margin: auto;
+  }
+  header {
+    position: relative;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    background-image: url('../img/1.jpg');
+    background-size: cover;
+  }
+  nav{
+    display: flex;
+    justify-content: space-between;
+    height: 10vh;
+    align-items: center;
+  }
+  nav ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+  }
+  nav ul li{
+    margin-left: 20px;
+    color: #fff;
+  }
+  nav h3{
+    color: #fff;
+    font-size: 1.5rem;
+  }
+
+  .intro{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #161616;
+    z-index: 1;
+    transition: all .2s;
+    -webkit-transition: all .2s;
+    -moz-transition: all .2s;
+    -ms-transition: all .2s;
+    -o-transition: all .2s;
+}
+  .intro .logo-header{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    color: #fff;
+    display: flex;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+.logo-header div{
+    margin: 0 5px;
+}
+.logo-header div:nth-child(2){
+    color: #bb0826;
+}
+.logo{
+    opacity: 0;
+    position: relative;
+    transition: all .3s ease-in-out;
+    bottom: -20px;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+}
+.active{
+    transition: all .3s ease-in-out;
+    opacity: 1;
+    bottom: 0;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+}
+.fade{
+    transition: all .3s ease-in-out;
+    bottom: 150px;
+    opacity: 0;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+}
