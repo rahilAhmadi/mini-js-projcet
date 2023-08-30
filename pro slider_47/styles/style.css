@@ -44,11 +44,31 @@
     right: 0;
     background-position: center;
     background-size: cover;
+    animation: zoom 1s linear forwards;
+    -webkit-animation: zoom 1s linear forwards;
+}
+@keyframes zoom{
+    0%{
+        transform: scale(1);
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+}
+100%{
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+}
 }
 .slider .slider-item .item .caption{
     width: 1400px;
     position: relative;
     margin: auto;
+    top: -20%;
+    right: -3%;
     text-align: right;
 }
 .slider .slider-item .item .caption .text h2{
@@ -114,4 +134,13 @@
 }
 .slider .controls .prev{
     left: 30px;
+}
+
+@keyframes progress{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 100%;
+    }
 }
