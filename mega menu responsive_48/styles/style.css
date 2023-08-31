@@ -1,0 +1,116 @@
+@font-face {
+    font-family: 'vazir';
+    src: url('../fonts/vazir.eot'); 
+    src: url('../fonts/vazir.ttf')  format('truetype'), 
+         url('../fonts/vazir.woff2') format('woff2'), 
+         url('../fonts/vazir.woff') format('woff');
+  }
+
+  *{
+      padding: 0;
+      margin: 0;
+  }
+
+
+  body{
+      font-family: 'vazir';
+      direction: rtl;
+      height: 100vh;
+      background: url('../images/1.jpg');
+      background-size: cover;
+  }
+  .container{
+    width: 1700px;
+    margin: auto;
+    padding: 0 15px;
+  }
+  header{
+    width: 100%;
+    height: 50px;
+    position: relative;
+    display: flex;
+    background: #111;
+  }
+  header nav{
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header nav .logo{
+    color: crimson;
+    font-weight: 900;
+  }
+  header nav #navbar{
+    display: flex;
+    list-style: none;
+  }
+  header nav #navbar li{
+      margin-left: 20px;
+}
+header nav #navbar li a{
+        color: #fff;
+        text-decoration: none;
+        padding: 0 15px;
+}
+
+.menu-one{
+    position: absolute;
+    width: 100%;
+    right: -100%;
+    top: 50px;
+    background-color: #fff;
+    transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    display: flex;
+}
+.drop_one:hover .menu-one{
+    right: 0;
+}
+.menu-one ul li svg{
+    font-size: 20px;
+    margin-right: 10px;
+    transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+}
+.drop_one:hover svg{
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+}
+.menu-one ul{
+    text-align: center;
+    width: 20%;
+    list-style: none;
+}
+.menu-one ul li h3{
+    font-size: 20px;
+    color: teal;
+}
+.menu-one ul li a{
+    color: #000 !important;
+    padding: 10px 0 !important;
+    display: block;
+}
+
+.menu-one ul li img{
+    width: 300px;
+}
+
+@media screen and (max-width:992px){
+    header nav #navbar{
+        position: absolute;
+        top: 50px;
+        display: block;
+    }
+  
+}
