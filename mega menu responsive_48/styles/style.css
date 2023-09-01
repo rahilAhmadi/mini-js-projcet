@@ -155,9 +155,13 @@ header nav #navbar li a{
     .drop_one{
         position: relative;
     }
-.bars{
+    .bars{
     display: block;
-    transi
+    transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
 }
 .bars.rotate{
     transform: rotate(0deg);
