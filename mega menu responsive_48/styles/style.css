@@ -105,12 +105,65 @@ header nav #navbar li a{
 .menu-one ul li img{
     width: 300px;
 }
-
+.bars{
+    color: #fff;
+    font-size: 35px;
+    transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    cursor: pointer;
+    display: none;
+}
 @media screen and (max-width:992px){
+    .container{
+        width: 90vw;
+    }
+    header nav #navbar.active{
+        right: 0;
+    }
     header nav #navbar{
         position: absolute;
         top: 50px;
         display: block;
+        width: 100%;
+        background-color: #222;
+        right: -100%;
+        transition: all .3s ease-in-out;
+        -webkit-transition: all .3s ease-in-out;
+        -moz-transition: all .3s ease-in-out;
+        -ms-transition: all .3s ease-in-out;
+        -o-transition: all .3s ease-in-out;
+}
+    header nav #navbar li{
+        margin: 15px 0;
+    }
+    .menu-one{
+        right: 0;
+        display: none;
+    }
+    .drop_one ul{
+        width: 100%;
     }
   
+    .menu-one.show{
+        display: block;
+        top: 0px;
+        position: relative;
+    }
+    .drop_one{
+        position: relative;
+    }
+.bars{
+    display: block;
+    transi
+}
+.bars.rotate{
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+}
 }
