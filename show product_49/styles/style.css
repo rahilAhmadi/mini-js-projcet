@@ -21,6 +21,56 @@ h1{
     top: 60px;
     left: -9%;
     cursor: pointer;
+    width: 3%;
+}
+h1::before{
+    content: attr(data-count);
+    position: absolute;
+    top: -12px;
+    width: 20px;
+    height: 20px;
+    left: 0;
+    background-color: #c00;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    font-size: 15px;
+    color: #fff;
+    text-align: center;
+    opacity: 0;
+    transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+}
+h1 .alert::before{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-bottom: 10px solid transparent;
+    border-top: 10px solid transparent;
+    border-left: 10px solid #c00;
+    right: -10px;
+    top: 12px;
+
+}
+h1 .alert{
+    position: absolute;
+    width: 300px;
+    font-size: 17px;
+    color: #fff;
+    background: #c00;
+    padding: 10px;
+    text-align: center;
+    top: 0px;
+    right: 70px;
+}
+h1.zero::before{
+    opacity: 1;
 }
 section{
     width: 80%;

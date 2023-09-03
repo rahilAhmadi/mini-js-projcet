@@ -21,3 +21,24 @@ for(let i=0;i<indicator.length;i++){
         }
     }
 }
+
+
+
+const notification=document.querySelector('h1');
+const btn=document.querySelector('button');
+
+
+btn.onclick=()=>{
+    let n=Number(notification.getAttribute('data-count')||0);
+    notification.setAttribute('data-count',n+1);
+    notification.classList.add('zero');
+    if(n>=1){
+        let card_icon=document.querySelector('.btn');
+        let alert=document.createElement('div');
+        alert.classList.add('alert');
+        alert.innerHTML='این محصول در سبد خرید موجود است'
+        card_icon.appendChild(alert);
+        notification.setAttribute('data-count',1);
+
+    }
+}
