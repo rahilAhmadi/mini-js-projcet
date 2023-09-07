@@ -1,0 +1,166 @@
+@font-face {
+    font-family: 'vazir';
+    src: url('../fonts/vazir.eot');
+    src: url('../fonts/vazir.ttf') format('truetype'),
+        url('../fonts/vazir.woff2') format('woff2'),
+        url('../fonts/vazir.woff') format('woff');
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'vazir';
+    direction: rtl;
+
+    height: 100vh;
+}
+
+.container {
+    width: 1140px;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    padding: 15px;
+    z-index: 1;
+}
+
+.header .logo a {
+    color: #333;
+    font-size: 30px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.header .nav_toggle{
+    width: 45px;
+    height: 45px;
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    cursor: pointer;
+}
+.header .nav_toggle span::after{
+    top: 8px;
+}
+.header .nav_toggle span::before{
+    top: -8px;
+}
+.header .nav_toggle span::before,
+.header .nav_toggle span::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    position: absolute;
+    left: 0;
+}
+.header .nav_toggle span {
+    width: 24px;
+    height: 3px;
+    background-color: #fff;
+    cursor: pointer;
+    position: relative;
+    display: block;
+}
+nav{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 260px;
+    height: 100%;
+    background-color: #111;
+    z-index: 1000;
+    transform: translateX(260px);
+    -webkit-transform: translateX(260px);
+    -moz-transform: translateX(260px);
+    -ms-transform: translateX(260px);
+    -o-transform: translateX(260px);
+    overflow: hidden;
+}
+
+nav .head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #d5d5d5;
+    flex-direction: row-reverse;
+    padding: 10px 20px;
+    border-bottom: 10x solid #333;
+}
+nav .head strong{
+    font-size: 16px;
+}
+nav .head .close svg{
+    font-size: 24px;
+    cursor: pointer;
+}
+
+nav ul{
+    list-style: none;
+    padding: 10px 0;
+}
+nav ul li{
+    display: block;
+}
+nav ul a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    display: block;
+    padding: 8px 15px;
+    position: relative;
+    transition: all .3s ease-in-out;
+}
+nav li a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: #fff;
+    z-index: -1;
+    transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+}
+nav li a:hover::before{
+    width: 100%;
+}
+nav li a:hover{
+    color: #000;
+}
+
+
+.home-section{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background: url('../img/home-bg.jpg');
+}
