@@ -11,8 +11,6 @@
       margin: 0;
       box-sizing: border-box;
   }
-
-
   body{
       font-family: 'vazir';
       direction: rtl;
@@ -124,6 +122,63 @@ form button{
     -moz-transition: all .3s ease-in;
     -ms-transition: all .3s ease-in;
     -o-transition: all .3s ease-in;
+}.form-control.error input{
+    border-color: #f14545;
+}
+.form-control.error span{
+    visibility: visible;
+}
+.form-control.error .fa-exclamation-triangle{
+    visibility: visible;
+}
+
+.form-control.success input{
+    border-color: #42b856;
+}
+.form-control.success .fa-check-circle{
+    visibility: visible;
+}
+.container form .form-control{
+    width: 100%;
+    margin-top: 20px;
+    position: relative;
+}
+.form-control label{
+    display: block;
+    text-align: right;
+    margin-bottom: 10px;
+}
+.form-control input{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border: 2px solid #d8d8d8;
+    display: block;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.form-control input::placeholder{
+    color: #b9b9b9;
+}
+.form-control svg{
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    visibility: hidden;
+}
+.form-control .fa-check-circle{
+    color: #43cc5a;
+}
+.form-control .fa-exclamation-triangle{
+    color: #c00;
+}
+.form-control span{
+    font-size: 13px;
+    color: #c00;
+    visibility: hidden;
 }
 form button:hover{
     background: #2d9c3f;
