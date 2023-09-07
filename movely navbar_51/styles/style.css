@@ -85,6 +85,27 @@ body {
     position: relative;
     display: block;
 }
+.nav-overly{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    -o-transform: translateX(-100%);
+}
+.nav-overly.open{
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+}
 nav{
     position: fixed;
     top: 0;
@@ -99,8 +120,14 @@ nav{
     -ms-transform: translateX(260px);
     -o-transform: translateX(260px);
     overflow: hidden;
+    }
+nav.open{
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
 }
-
 nav .head{
     display: flex;
     align-items: center;
@@ -143,12 +170,7 @@ nav li a::before{
     height: 100%;
     background-color: #fff;
     z-index: -1;
-    transition: all .3s ease-in-out;
-    -webkit-transition: all .3s ease-in-out;
-    -moz-transition: all .3s ease-in-out;
-    -ms-transition: all .3s ease-in-out;
-    -o-transition: all .3s ease-in-out;
-}
+   }
 nav li a:hover::before{
     width: 100%;
 }
