@@ -75,10 +75,10 @@
 .portfolio-gallery{
     width: 100%;
     display: flex;
-    align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
     background-color: #e6e6e6;
+    height: 800px;
 }
 .portfolio-gallery .item{
     width: 32.33%;
@@ -157,4 +157,35 @@
     -moz-transform: translateY(0);
     -ms-transform: translateY(0);
     -o-transform: translateY(0);
+}
+
+.loghtBox{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.loghtBox.show{
+    display: flex;
+}
+.loghtBox img{
+    width: 80%;
+    height: 80%;
+}
+.loghtBox svg{
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    background-color: #D84315;
+    padding: 5px 15px;
+    cursor: pointer;
+    color: #fff;
 }
