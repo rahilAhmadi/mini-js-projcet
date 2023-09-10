@@ -1,0 +1,74 @@
+@font-face {
+    font-family: 'vazir';
+    src: url('../fonts/vazir.eot'); 
+    src: url('../fonts/vazir.ttf')  format('truetype'), 
+         url('../fonts/vazir.woff2') format('woff2'), 
+         url('../fonts/vazir.woff') format('woff');
+  }
+
+  *{
+      padding: 0;
+      margin: 0;
+      outline: none;
+  }
+
+
+  body{
+      font-family: 'vazir';
+      direction: rtl;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #30383e;
+      box-sizing: border-box;
+  }
+
+  input,textarea,button{
+    font-family: 'vazir';
+  }
+  .container{
+    width: 1200px;
+    margin: auto;
+  }
+h1{
+    color: #fff;
+    margin-bottom: 50px;
+    margin-top: 100px;
+}
+form{
+    width: 700px;
+    margin: auto;
+}
+form .input-group{
+    width: 100%;
+    margin-bottom: 30px;
+}
+form .input-control{
+    width: 100%;
+    padding: 15px;
+    font-size: 16px;
+    height: 50px;
+}
+form textarea .input-control{
+    height: 100px;
+}
+form .text-red{
+    color: #c00;
+}
+form .text-orange{
+    color: orange;
+}
+form button{
+    border: none;
+    padding: 10px 50px;
+    background-color: greenyellow;
+    color: #000;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    cursor: pointer;
+}
