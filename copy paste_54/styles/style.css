@@ -1,0 +1,90 @@
+@font-face {
+    font-family: 'vazir';
+    src: url('../fonts/vazir.eot'); 
+    src: url('../fonts/vazir.ttf')  format('truetype'), 
+         url('../fonts/vazir.woff2') format('woff2'), 
+         url('../fonts/vazir.woff') format('woff');
+  }
+
+  *{
+      padding: 0;
+      margin: 0;
+      font-family: 'vazir';
+      outline: none;
+  }
+
+
+  body{
+      font-family: 'vazir';
+      direction: rtl;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+  }
+  textarea{
+    padding: 10px;
+    resize: none;
+    color: #202020;
+    text-align: justify;
+    font-size: 17px;
+  }
+  textarea:focus{
+    outline-color: #ff7b00;
+    border-color: #ff7b00;
+  }
+  .btn{
+    width: 500px;
+  }
+  button{
+    padding: 9px 15px;
+    border: none;
+    background-color: #ff7b00;
+    color: #fff;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    margin: 15px 0;
+    width: 200px;
+    cursor: pointer;
+    font-size: 17px;
+    outline: none;
+}
+.btn .toltip{
+    background-color: #ff7b00;
+    padding: 5px;
+    color: #fff;
+    margin-right: -10px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    font-size: 15px;
+    position: relative;
+    opacity: 0;
+    transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition-delay: .3s;
+}
+.btn .toltip::before{
+    content: '';
+    position: absolute;
+    right: -5px;
+    top: 9px;
+    width: 0;
+    height: 0;
+    border-left: 7px solid #ff7b00;
+    border-top: 7px solid transparent;
+    border-bottom: 7px solid transparent;
+}
+.toltip.show{
+    margin-right: 10px;
+    opacity: 1;
+}
