@@ -39,10 +39,10 @@ section img{
 span{
     width: 95px;
     height: 75px;
-    background-color: red;
+    background-color: rgba(0, 0, 0, 0.2);
     position: absolute;
     cursor: pointer;
-    border: 1px solid #d4d4d4;
+    border: 1px solid #d4d4d492;
     visibility: hidden;
 }
 div{
