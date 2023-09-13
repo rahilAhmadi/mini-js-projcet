@@ -39,6 +39,7 @@
     -moz-border-radius: 5px;
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
+    overflow: hidden;
 }
 .button-box{
     width: 220px;
@@ -55,7 +56,7 @@
     background: transparent;
     font-family: 'vazir';
     border: none;
-    padding: 10px 30px;
+    padding: 10px 37px;
     cursor: pointer;
     outline: none;
     position: relative;
@@ -72,7 +73,13 @@
     -moz-border-radius: 30px;
     -ms-border-radius: 30px;
     -o-border-radius: 30px;
+    transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
 }
+
 .social{
     width: 100%;
     display: flex;
@@ -136,8 +143,13 @@
 .input-group{
     width: 100%;
     padding: 0 30px;
-    margin: 40px 0;
+    margin: 20px 0;
     position: absolute;
+    transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
 }
 .input-group .input-field{
     width: 100%;
@@ -174,4 +186,14 @@
 }
 #register{
     right:450px ;
+}
+#login{
+    transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+}
+#login{
+     right: 0;
 }
