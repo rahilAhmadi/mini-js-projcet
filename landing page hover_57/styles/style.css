@@ -1,0 +1,131 @@
+@font-face {
+    font-family: 'vazir';
+    src: url('../fonts/vazir.eot'); 
+    src: url('../fonts/vazir.ttf')  format('truetype'), 
+         url('../fonts/vazir.woff2') format('woff2'), 
+         url('../fonts/vazir.woff') format('woff');
+  }
+
+  *{
+      padding: 0;
+      margin: 0;
+  }
+
+
+  body{
+      font-family: 'vazir';
+      direction: rtl;
+      height: 100vh;
+  }
+  section{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-self: flex-start;
+  }
+  .container{
+    width: 90%;
+    max-width: 1200px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    height: 100%;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+  .bg{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+    background-color: black;
+  }
+  bg::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height:100%;
+    background: rgba(0, 0, 0, 0.5);
+  }
+  .bg img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  a{
+    text-decoration: none;
+    color: whitesmoke;
+  }
+  h1{
+    font-size: 40px;
+    display: flex;
+    align-items: flex-start;
+    color: whitesmoke;
+    position: relative;
+  }
+  .container h1 span{
+    margin-right: 50px;
+  }
+  #line{
+    position: absolute;
+    left: 0;
+    bottom: -15px;
+    width: 250px;
+    border: 4px solid rgb(0, 102, 255);
+    pointer-events: none;
+    z-index: -1;
+    transition: all .3s ease-in;
+    -webkit-transition: all .3s ease-in;
+    -moz-transition: all .3s ease-in;
+    -ms-transition: all .3s ease-in;
+    -o-transition: all .3s ease-in;
+}
+.container p{
+    color: #fff;
+    font-size: 20px;
+    margin-top: 40px;
+    width: 500px;
+}
+.container button{
+    font-family: 'vazir';
+    font-size: 18px;
+    padding: 10px 20px;
+    margin-top: 20px;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+.mobile-text{
+    display: none;
+}
+  @keyframes animate{
+    0%{
+        opacity: .5;
+        transform: scale(1);
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+}
+    100%{
+        opacity: 1;
+        transform: scale(1.1);
+        -webkit-transform: scale(1.1);
+        -moz-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        -o-transform: scale(1.1);
+}
+  }
+@media screen and (max-width:768px){
+    .mobile-text{
+        display: block;
+    }
+    .text{
+        display: none;
+    }
+}
