@@ -11,7 +11,13 @@
       margin: 0;
       box-sizing: border-box;
   }
-
+:root{
+    --dark-background-color:#111;
+    --dark-background-color-alt:#222;
+    --dark-trim-color:#333;
+    --dark-text-color:#eee;
+     
+}
 
   body{
       font-family: 'vazir';
@@ -25,6 +31,20 @@
       background: var(--background-color);
       color: var(--text-color);
       margin: 60px 0 0 0;
+  }
+  body.theme-dark{
+    --background-color:var(--dark-background-color);
+    --background-color-alt:var(--dark-background-color-alt);
+    --trim-color:var(--dark-trim-color);
+    --text-color:var(--dark-text-color);
+}
+@media(prefers-color-scheme:dark){
+    body.theme-auto{
+    --background-color:var(--dark-background-color);
+    --background-color-alt:var(--dark-background-color-alt);
+    --trim-color:var(--dark-trim-color);
+    --text-color:var(--dark-text-color);
+    }
   }
   .header{
     position: fixed;
@@ -66,7 +86,7 @@
     border: none;
     outline: none;
     cursor: pointer;
-    background-color: none;
+    background: none;
     padding: 7px 14px;
     font-weight: 600;
     color: var(--text-color);
