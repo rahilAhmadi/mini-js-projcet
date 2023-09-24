@@ -161,3 +161,35 @@ padding: 10px;}
 .controls .prev:hover{
     background-color: #c3361d;
 }
+.indicator{
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    z-index: 2;
+    display: flex;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+.indicator div{
+    width: 25px;
+    height: 25px;
+    background-color: #333;
+    color: #fff;
+    margin: 0 15px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.indicator div.active{
+    background-color: #c3361d;
+}
