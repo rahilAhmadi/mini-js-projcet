@@ -73,34 +73,38 @@ body {
     -ms-transition: .5s;
     -o-transition: .5s;
 }
+
 .menu .hamburger-menu .bar::before,
-.menu .hamburger-menu .bar::after{
+.menu .hamburger-menu .bar::after {
     content: '';
     position: absolute;
     width: 100%;
     height: 100%;
     background-color: #eee;
-    transition:.5s;
-    -webkit-transition:.5s;
-    -moz-transition:.5s;
-    -ms-transition:.5s;
-    -o-transition:.5s;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
 }
-.bar::before{
+
+.bar::before {
     transform: translateY(-10px);
     -webkit-transform: translateY(-10px);
     -moz-transform: translateY(-10px);
     -ms-transform: translateY(-10px);
     -o-transform: translateY(-10px);
 }
-.bar::after{
+
+.bar::after {
     transform: translateY(10px);
     -webkit-transform: translateY(10px);
     -moz-transform: translateY(10px);
     -ms-transform: translateY(10px);
     -o-transform: translateY(10px);
 }
-.main{
+
+.main {
     position: relative;
     width: 100%;
     left: 0;
@@ -113,12 +117,14 @@ body {
     -o-transition: .5s ease;
     transform-origin: left;
 }
-header{
+
+header {
     width: 100%;
     height: 100vh;
     background: url('../img/bg.jpg');
 }
-.main .overly{
+
+.main .overly {
     position: absolute;
     top: 0;
     left: 0;
@@ -129,20 +135,24 @@ header{
     align-items: center;
     justify-content: center;
 }
-.inner{
+
+.inner {
     max-width: 35rem;
     padding: 0 2rem;
     color: #fff;
     text-align: center;
 }
-.title{
+
+.title {
     font-size: 2.7rem;
 
 }
-p{
+
+p {
     margin-bottom: 30px;
 }
-.btn{
+
+.btn {
     outline: none;
     color: #fff;
     background-color: #1179e7;
@@ -154,7 +164,8 @@ p{
     -ms-border-radius: 25px;
     -o-border-radius: 25px;
 }
-.links{
+
+.links {
     position: absolute;
     top: 0;
     right: 0;
@@ -165,15 +176,18 @@ p{
     justify-content: center;
     z-index: 2;
 }
-.links ul{
+
+.links ul {
     display: inline;
     list-style: none;
 }
-.links ul li{
+
+.links ul li {
     margin: 10px 0;
     text-align: center;
 }
-.links ul li a{
+
+.links ul li a {
     color: #fff;
     font-size: 20px;
     text-decoration: none;
@@ -192,7 +206,8 @@ p{
     opacity: 0;
     transition-delay: .3s;
 }
-.container.active .bar{
+
+.container.active .bar {
     transform: rotate(360deg);
     -webkit-transform: rotate(360deg);
     -moz-transform: rotate(360deg);
@@ -200,22 +215,24 @@ p{
     -o-transform: rotate(360deg);
     background-color: transparent;
 }
-.container.active .bar::before{
-    transform:translateY(0) rotate(45deg);
-    -webkit-transform:translateY(0) rotate(45deg);
-    -moz-transform:translateY(0) rotate(45deg);
-    -ms-transform:translateY(0) rotate(45deg);
-    -o-transform:translateY(0) rotate(45deg);
-}
-.container.active .bar::after{
-    transform:translateY(0) rotate(-45deg);
-    -webkit-transform:translateY(0) rotate(-45deg);
-    -moz-transform:translateY(0) rotate(-45deg);
-    -ms-transform:translateY(0) rotate(-45deg);
-    -o-transform:translateY(0) rotate(-45deg);
+
+.container.active .bar::before {
+    transform: translateY(0) rotate(45deg);
+    -webkit-transform: translateY(0) rotate(45deg);
+    -moz-transform: translateY(0) rotate(45deg);
+    -ms-transform: translateY(0) rotate(45deg);
+    -o-transform: translateY(0) rotate(45deg);
 }
 
-.container.active .main{
+.container.active .bar::after {
+    transform: translateY(0) rotate(-45deg);
+    -webkit-transform: translateY(0) rotate(-45deg);
+    -moz-transform: translateY(0) rotate(-45deg);
+    -ms-transform: translateY(0) rotate(-45deg);
+    -o-transform: translateY(0) rotate(-45deg);
+}
+
+.container.active .main {
     transform: perspective(1300px) rotateY(20deg) translateZ(310px) scale(.5);
     -webkit-transform: perspective(1300px) rotateY(20deg) translateZ(310px) scale(.5);
     -moz-transform: perspective(1300px) rotateY(20deg) translateZ(310px) scale(.5);
@@ -223,7 +240,7 @@ p{
     -o-transform: perspective(1300px) rotateY(20deg) translateZ(310px) scale(.5);
 }
 
-.container.active .links ul li a{
+.container.active .links ul li a {
     transform: translateY(0);
     -webkit-transform: translateY(0);
     -moz-transform: translateY(0);
