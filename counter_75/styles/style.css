@@ -1,0 +1,72 @@
+@font-face {
+    font-family: 'vazir';
+    src: url('../fonts/vazir.eot'); 
+    src: url('../fonts/vazir.ttf')  format('truetype'), 
+         url('../fonts/vazir.woff2') format('woff2'), 
+         url('../fonts/vazir.woff') format('woff');
+  }
+
+  *{
+      padding: 0;
+      margin: 0;
+  }
+
+
+  body{
+      font-family: 'vazir';
+      direction: rtl;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+  }
+  header{
+    text-align: center;
+    height: 5vh;
+    background-color: rgb(3, 225, 225);
+    font-size: 28px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+  }
+  main{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .buttons{
+    display: flex;
+    width: 30%;
+    margin-top: 30px;
+  }
+  .buttons input{
+    width: 33.33%;
+    padding: 10px 0;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    outline: none;
+    border: none;
+    margin: 0 10px;
+    font-size: 18px;
+}
+.buttons input:nth-child(1),
+.buttons input:nth-child(3){
+    background-color: aqua;
+}
+.buttons input:nth-child(2){
+    background-color: red;
+    color: #fff;
+}
+.counter_number{
+    font-size:30px;
+}
