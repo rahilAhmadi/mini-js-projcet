@@ -1,0 +1,118 @@
+@font-face {
+    font-family: 'vazir';
+    src: url('../fonts/vazir.eot');
+    src: url('../fonts/vazir.ttf') format('truetype'),
+        url('../fonts/vazir.woff2') format('woff2'),
+        url('../fonts/vazir.woff') format('woff');
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+body {
+    font-family: 'vazir';
+    direction: rtl;
+    height: 100vh;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.container .title {
+    color: #000;
+    margin: 20px 0;
+    text-align: center;
+    font-size: 40px;
+}
+
+.gallery-item .item {
+    width: 25%;
+    float: left;
+    position: relative;
+}
+
+.gallery-item .item.hide {
+    display: none;
+}
+
+.gallery-item .item.show {
+    display: block;
+    animation: show .5s ease;
+    -webkit-animation: show .5s ease;
+}
+
+@keyframes show {
+    0% {
+        opacity: 0;
+        transform: scale(.9);
+        -webkit-transform: scale(.9);
+        -moz-transform: scale(.9);
+        -ms-transform: scale(.9);
+        -o-transform: scale(.9);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+    }
+}
+
+.gallery .item img {
+    width: 100%;
+    height: 200px;
+    display: block;
+}
+
+.gallery-item .item .caption {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    height: 50px;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+}
+
+.gallery {
+    float: left;
+    width: 100%;
+    position: relative;
+    height: 70vh;
+}
+
+.pagination {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    margin:  0;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+}
+
+.pagination .next,
+.pagination .prev {
+    border: 1px solid rgb(87, 87, 87);
+    margin: 0 10px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.pagination .next.disable,
+.pagination .prev.disable {
+    border: 1px solid gray;
+    color: gray;
+    pointer-events: none;
+}
