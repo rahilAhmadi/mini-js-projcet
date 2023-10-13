@@ -1,0 +1,106 @@
+@font-face {
+    font-family: 'vazir';
+    src: url('../fonts/vazir.eot'); 
+    src: url('../fonts/vazir.ttf')  format('truetype'), 
+         url('../fonts/vazir.woff2') format('woff2'), 
+         url('../fonts/vazir.woff') format('woff');
+  }
+
+  *{
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+  }
+
+
+  body{
+      font-family: 'vazir';
+      direction: rtl;
+      height: 100vh;
+  }
+  .editor-menu{
+    width: 100%;
+    height: 6rem;
+    padding: 10px;
+    background-color: #eee;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .btn{
+    cursor: pointer;
+    outline: none;
+    border: none;
+    padding: 8px 7px;
+    background-color: #086308;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    font-size: 1.6rem;
+    margin-right: 10px;
+    color: #fff;
+    font-family: 'vazir';
+    transition: all .3s ease-in;
+    -webkit-transition: all .3s ease-in;
+    -moz-transition: all .3s ease-in;
+    -ms-transition: all .3s ease-in;
+    -o-transition: all .3s ease-in;
+}
+.btn:hover{
+    background-color: #af0000;
+}
+
+
+.live{
+    font-size: 1.6rem;
+    border: 2px solid #af0000;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin-right: 10px;
+}
+.live>*{
+    cursor: pointer;
+}
+
+/* live Box */
+.container{
+    position: absolute;
+    top: 6rem;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    direction: ltr;
+}
+.left,
+.right{
+    height: 100%;
+    width: 50%;
+    border: 1px solid #d5d5d5;
+}
+.bar{
+    width: 3px;
+    height: 100%;
+    background-color: #eee;
+    cursor: w-resize;
+}
+
+.editor{
+    width: 100%;
+    height: 100%;
+    font-size: 1.6rem;
+    padding: 1rem 0 0 1rem;
+    outline: none;
+}
+
+.ifram{
+    padding: 5px;
+    white-space: pre;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+}
