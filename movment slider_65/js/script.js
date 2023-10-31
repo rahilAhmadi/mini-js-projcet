@@ -24,4 +24,14 @@ function autoPlay() {
     }
 }
 
-let paly=setInterval(autoPlay, 50);
+let paly = setInterval(autoPlay, 50);
+
+
+for (let i = 0; i < thumbnail.length; i++) {
+    thumbnail[i].addEventListener('mouseover', () => {
+        clearInterval(paly);
+    })
+    thumbnail[i].addEventListener('mouseout', () => {
+        return paly = setInterval(autoPlay, 50);
+    })
+}
