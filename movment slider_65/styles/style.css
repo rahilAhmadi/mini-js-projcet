@@ -51,6 +51,7 @@ section{
     align-items: center;
     flex-wrap: nowrap;
     overflow-x: auto;
+    direction: ltr;
 }
 section .thumbnail img{
     width: 300px;
